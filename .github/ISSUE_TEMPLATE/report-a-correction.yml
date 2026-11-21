@@ -1,0 +1,16 @@
+name: Report a correction or play issue
+description: Tell us which guide or game page needs a fix.
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Daily Games Today page URL
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should we check?
+      description: Include steps, device and browser for play issues. Leave out current puzzle answers and private details.
+    validations:
+      required: true

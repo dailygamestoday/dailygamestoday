@@ -1,0 +1,23 @@
+name: Suggest a browser game
+description: Share an official play link and tell us what makes the game worth trying.
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official play URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: gameplay
+    attributes:
+      label: What do you do in a round?
+      description: If you made the game, tell us how to credit you.
+    validations:
+      required: true
